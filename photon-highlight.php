@@ -4,7 +4,7 @@ namespace Grav\Plugin;
 use Grav\Common\Plugin;
 use Grav\Common\Page\Interfaces\PageInterface;
 
-class HighlightPlugin extends Plugin
+class PhotonHighlightPlugin extends Plugin
 {
     /**
      * @return array
@@ -26,14 +26,14 @@ class HighlightPlugin extends Plugin
             return;
         }
 
-        $defaults = (array) $this->config->get('plugins.highlight');
+        $defaults = (array) $this->config->get('plugins.photon-highlight');
 
         /** @var PageInterface $page */
         $page = $this->grav['page'];
         if (isset($page->header()->highlight)) {
-            $this->config->set('plugins.highlight', array_merge($defaults, $page->header()->highlight));
+            $this->config->set('plugins.photon-highlight', array_merge($defaults, $page->header()->highlight));
         }
-        if ($this->config->get('plugins.highlight.enabled')) {
+        if ($this->config->get('plugins.photon-highlight.enabled')) {
             $this->enable([
                 'onTwigSiteVariables' => ['onTwigSiteVariables', 0]
             ]);
@@ -46,15 +46,15 @@ class HighlightPlugin extends Plugin
     public function onTwigSiteVariables()
     {
         $init = "hljs.initHighlightingOnLoad();\n";
-        if ($this->config->get('plugins.highlight.lines')) {
+        if ($this->config->get('plugins.photon-highlight.lines')) {
             $init .= "hljs.initLineNumbersOnLoad();\n";
         }
-        $theme = $this->config->get('plugins.highlight.theme') ?: 'default';
-        $this->grav['assets']->addCss('plugin://highlight/css/'.$theme.'.css');
-        $this->grav['assets']->addJs('plugin://highlight/js/highlight.pack.js');
-        if ($this->config->get('plugins.highlight.lines')) {
-            $this->grav['assets']->addJs('plugin://highlight/js/highlightjs-line-numbers.min.js');
-            $this->grav['assets']->addCss('plugin://highlight/css/highlightjs-line-numbers.css');
+        $theme = $this->config->get('plugins.photon-highlight.theme') ?: 'default';
+        $this->grav['assets']->addCss('plugin://photon-highlight/css/'.$theme.'.css');
+        $this->grav['assets']->addJs('plugin://photon-highlight/js/highlight.pack.js');
+        if ($this->config->get('plugins.photon-highlight.lines')) {
+            $this->grav['assets']->addJs('plugin://photon-highlight/js/highlightjs-line-numbers.min.js');
+            $this->grav['assets']->addCss('plugin://photon-highlight/css/highlightjs-line-numbers.css');
         }
         $this->grav['assets']->addInlineJs($init);
     }
