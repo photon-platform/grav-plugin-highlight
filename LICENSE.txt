@@ -20,4 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright for portions of grav-plugin-photon-highlight are held by [Grav, 2014] as part of grav-plugin-highlight. All other copyright for grav-plugin-photon-highlight are held by [photon PLATFORM, 2020].
+Copyright for portions of grav-plugin-photon-highlight are held by 
+[Grav, 2014] as part of grav-plugin-highlight. 
+All other copyright for grav-plugin-photon-highlight are held by 
+[photon PLATFORM, 2020].
