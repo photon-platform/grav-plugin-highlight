@@ -1,8 +1,8 @@
-name: Highlight
+name: phpton * Highlight
 version: 1.4.2
 description: "This plugin provides code highlighting functionality via the [Highlight.js](https://highlightjs.org/) jQuery plugin."
 icon: code
-author:
+original_author:
   name: Team Grav
   email: devs@getgrav.org
   url: http://getgrav.org
