@@ -5,9 +5,9 @@ original_author:
   name: Team Grav
   email: devs@getgrav.org
   url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-plugin-photon-highlight
-docs: https://github.com/getgrav/grav-plugin-photon-highlight
-bugs: https://github.com/getgrav/grav-plugin-photon-highlight/issues
+homepage: https://github.com/photon-platform/grav-plugin-photon-highlight
+docs: https://photon-platform.github.io/grav-plugin-photon-highlight/
+bugs: https://github.com/photon-platform/grav-plugin-photon-highlight/issues
 keywords: highlight, plugin, code
 icon: code
 license: MIT
