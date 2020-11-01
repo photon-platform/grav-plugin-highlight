@@ -31,7 +31,7 @@ Before configuring this plugin, you should copy the `user/plugins/photon-highlig
 
 Here is the default configuration and an explanation of available options:
 
-```
+```yaml
 enabled: true
 theme: default
 lines: false
