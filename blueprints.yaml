@@ -1,15 +1,15 @@
 name: photon * Highlight
-version: 1.4.2
+version: 0.1.0
 description: "This plugin provides code highlighting functionality via the [Highlight.js](https://highlightjs.org/) jQuery plugin."
-icon: code
 original_author:
   name: Team Grav
   email: devs@getgrav.org
   url: http://getgrav.org
-homepage: https://github.com/getgrav/grav-plugin-highlight
-demo: http://learn.getgrav.org
+homepage: https://github.com/getgrav/grav-plugin-photon-highlight
+docs: https://github.com/getgrav/grav-plugin-photon-highlight
+bugs: https://github.com/getgrav/grav-plugin-photon-highlight/issues
 keywords: highlight, plugin, code
-bugs: https://github.com/getgrav/grav-plugin-highlight/issues
+icon: code
 license: MIT
 
 dependencies:
